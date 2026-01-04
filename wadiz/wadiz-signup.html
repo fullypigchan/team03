@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>와디즈</title>
+    <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard-dynamic-subset.min.css");
+    </style>
+    <link rel="stylesheet" href="wadiz.css">
+</head>
+
+<body>
+    <div id="root">
+        <main>
+            <div class="flex-column-start-32 padding-y-48 content-width-560">
+                <div class="SignupForm-container">
+                    <div class="SignupForm-titleContainer">
+                        <div class="SignupForm-title">이메일 가입하기</div><span
+                            class="SignupForm-description">최소한의 정보를 받고 있어요.</span>
+                    </div>
+                    <div class="SignupForm-content">
+                        <div>
+                            <form>
+                                <div class="EmailAuthField-emailAuthField"><label
+                                        class="EmailAuthField-fieldLabel">이메일<span
+                                            class="EmailAuthField-isRequired">*</span></label>
+                                    <div class="EmailAuthField-inputFieldContainer">
+                                        <div class="EmailAuthField-inputField"><input placeholder="이메일 입력"
+                                                name="email" type="email"
+                                                class="Input-input Input-lg"
+                                                aria-invalid="false" disabled=""></div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="EmailAuth-authCodeContainer"><input name="second" type="hidden"
+                                    value="62">
+                                <div
+                                    class="EmailAuthField-emailAuthField EmailAuthField-showTimer">
+                                    <label class="EmailAuthField-fieldLabel">인증 번호<span
+                                            class="EmailAuthField-isRequired">*</span></label>
+                                    <div class="EmailAuthField-inputFieldContainer">
+                                        <div class="EmailAuthField-inputField"><input name="authCode"
+                                                placeholder="인증 번호 입력" type="number"
+                                                class="Input-input Input-lg"
+                                                aria-invalid="false" value=""><span
+                                                class="EmailAuthField-count">1:02</span></div><button
+                                            class="Button-button Button-mint Button-contained Button-lg EmailAuthField-cta"
+                                            type="submit"><span><span>확인</span></span></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="EmailAuth-resendCodeReqWrapper"><span
+                                    class="EmailAuth-resendCodeReq">인증 번호 다시 보내기</span></div>
+                        </div>
+                        <form autocomplete="off"><input type="hidden" name="userName"><input type="hidden"
+                                name="loginIdType" value="email">
+                            <div class="SignupForm-textFiledGroup">
+                                <div class="TextField-textField TextField-lg undefined">
+                                    <label><span>
+                                            <div class="SignupForm-textFieldLabel">비밀번호</div>
+                                        </span><span class="TextField-isRequired">*</span></label>
+                                    <div
+                                        class="TextField-field TextField-disabled TextField-noStartText TextField-noEndText TextField-hasEndIcon">
+                                        <input autocomplete="new-password" placeholder="비밀번호 입력" name="password"
+                                            type="password" class="Input-input Input-lg"
+                                            aria-invalid="false" disabled=""><button aria-label="비밀번호 보기"
+                                            class="Button-button Button-text Button-lg Button-iconOnly iconButton TextField-endIcon TextField-passwordIcon"
+                                            type="button"><span><span><svg viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="WithProps-icon">
+                                                        <path
+                                                            d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                                                            fill="#495057"></path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M21.9999 12C20.5443 7.33923 16.6167 4 12 4C7.38322 4 3.45561 7.33923 2 12C3.45561 16.6608 7.38322 20 12 20C16.6167 20 20.5443 16.6608 21.9999 12ZM17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
+                                                            fill="#495057"></path>
+                                                    </svg></span></span></button></div>
+                                    <div class="HelperMessage-helperMessage"><span
+                                            class="SignupForm-error"></span></div>
+                                </div>
+                                <div class="TextField-textField TextField-lg undefined">
+                                    <label></label>
+                                    <div
+                                        class="TextField-field TextField-disabled TextField-noStartText TextField-noEndText TextField-hasEndIcon">
+                                        <input autocomplete="new-password" placeholder="비밀번호 확인" name="verifyPassword"
+                                            type="password" class="Input-input Input-lg"
+                                            aria-invalid="false" disabled=""><button aria-label="비밀번호 보기"
+                                            class="Button-button Button-text Button-lg Button-iconOnly iconButton TextField-endIcon TextField-passwordIcon"
+                                            type="button"><span><span><svg viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="WithProps-icon">
+                                                        <path
+                                                            d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                                                            fill="#495057"></path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M21.9999 12C20.5443 7.33923 16.6167 4 12 4C7.38322 4 3.45561 7.33923 2 12C3.45561 16.6608 7.38322 20 12 20C16.6167 20 20.5443 16.6608 21.9999 12ZM17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
+                                                            fill="#495057"></path>
+                                                    </svg></span></span></button></div>
+                                    <div class="HelperMessage-helperMessage"><span
+                                            class="SignupForm-error"></span></div>
+                                </div>
+                            </div><button
+                                class="Button-button Button-mint Button-contained Button-lg Button-block Button-disabled SignupForm-termsButton"
+                                disabled="" type="button"><span><span>약관 동의 후 가입 완료하기</span></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
